@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChaiCoffee</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/imgs/theme/favicon.svg"
+    />
+    <!-- Template CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="assets/css/main.css?v=6.0" />
+  </head>
+
+  <style>
+    .fruite-item {
+      overflow: hidden;
+    }
+    .fruite-img {
+      position: relative;
+    }
+    .section-5-hover-overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      font-size: 13px;
+      font-weight: 600;
+      color: white;
+      width: 100%;
+      height: 20%;
+      background-color: #83b735;
+      border: none;
+
+      border-radius: 0;
+
+      transition: bottom 0.3s ease-in-out;
+    }
+    .fruite-img:hover .section-5-hover-overlay {
+      bottom: 0;
+    }
+
+    .whatsapp_float {
+      position: fixed;
+
+      right: 18px;
+      bottom: 66px;
+      z-index: 99;
+    }
+
+    .section2 {
+      margin: 60px;
+      display: flex;
+      height: 600px;
+      width: 1200px;
+    }
+
+    .zoom3 {
+      width: 425px;
+      height: 500px;
+      overflow: hidden;
+      margin: 0 auto;
+      padding-right: 7px;
+    }
+
+    .zoom {
+      width: 400px;
+      height: 500px;
+      overflow: hidden;
+      margin: 0 auto;
+      padding-right: 2px;
+    }
+
+    .zoom2 {
+      width: 345px;
+      height: 250px;
+      overflow: hidden;
+      margin: 0 auto;
+      padding-bottom: 6px;
+    }
+
+    .zoom2 img {
+      width: 100%;
+      transition: 0.5s all ease-in-out;
+    }
+
+    .zoom2:hover img {
+      transform: scale(1.5);
+    }
+
+    .zoom3 img {
+      width: 100%;
+      transition: 0.5s all ease-in-out;
+    }
+
+    .zoom3:hover img {
+      transform: scale(1.5);
+    }
+
+    .zoom img {
+      width: 100%;
+      transition: 0.5s all ease-in-out;
+    }
+
+    .zoom:hover img {
+      transform: scale(1.5);
+    }
+
+    .section2-container {
+      position: relative;
+    }
+
+    .img-text {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+
+    .slider {
+      margin-top: 8%;
+      margin-left: 13%;
+    }
+    .section4 {
+      display: flex;
+      width: 1300px;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .section4-container {
+      display: flex;
+      align-items: center;
+      height: 700px;
+    }
+    .section4-text {
+      width: 370px;
+    }
+    .section4-button {
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      width: 120px;
+      border: none;
+    }
+    .section4-button1 {
+      padding: 10px;
+      background-color: #83b735;
+      color: white;
+    }
+    .section4-button2 {
+      padding: 10px;
+      background-color: whitesmoke;
+      color: black;
+    }
+  </style>
+
+  <body>
+    <!-- <main class="main"> -->
+    <section class="home-slider position-relative">
+      <div class="container-fluid p-0">
+        <div class="home-slide-cover">
+          <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
+            <div
+              class="single-hero-slider single-animation-wrap"
+              style="background-image: url(assets/imgs/bg-slider1.jpg)"
+            >
+              <?php include "header.php"?>
+              <div class="slider wow fadeInUp" data-wow-delay="0.1s">
+                <img src="assets/imgs/slider1.png" alt="" />
+              </div>
+
+              <div class="slider-content">
+                <h1 class="display-2 mb-40">
+                  Don’t miss amazing<br />
+                  grocery deals
+                </h1>
+              </div>
+            </div>
+            <div
+              class="single-hero-slider single-animation-wrap"
+              style="background-image: url(assets/imgs/bg-slider2.jpg)"
+            >
+              <?php include "header.php"?>
+              <div class="slider">
+                <img src="assets/imgs/slider2.webp" alt="" />
+              </div>
+              <div class="slider-content">
+                <h1 class="display-2 mb-40">
+                  Fresh Vegetables<br />
+                  Big discount
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="slider-arrow hero-slider-1-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- </main > -->
+
+    <!--- ignore the code below-->
+    <!------------------------------------Section2------------------------------------------------------------->
+    <div class="section2">
+      <div class="zoom section2-container">
+        <img
+          src="./images/Section2/organic-bannere-img-1-opt.jpg.webp"
+          alt="zoom Image"
+        />
+        <div class="img-text">
+          <h2 style="color: #3a88cb">FRUIT TEA PACK</h2>
+          <p style="color: grey">THREE LARGE PACKS OF FRUIT</p>
+          <p style="color: grey">TEA AT THE PRICE OF ONE</p>
+        </div>
+      </div>
+      <div class="zoom3 section2-container">
+        <img
+          style="height: 500px"
+          src="./images/Section2/organic-ban-img-2-opt.jpg.webp"
+          alt="zoom Image"
+        />
+        <div class="img-text">
+          <h2 style="color: #8bb429">FRUIT JUICE</h2>
+          <p style="color: grey">FROM SQUEEZED</p>
+          <p style="color: grey">FRESH FRUIT</p>
+        </div>
+      </div>
+      <div>
+        <div class="zoom2 section2-container">
+          <img
+            style="height: 240px"
+            src="./images/Section2/organic-ban-img-3-opt.jpg.webp"
+            alt="zoom Image"
+          />
+          <div class="img-text">
+            <h2 style="color: #c4265a">BERRIES</h2>
+            <p style="color: grey">FORREST WILD</p>
+            <p style="color: grey">BERRIES</p>
+          </div>
+        </div>
+        <div class="zoom2 section2-container">
+          <img
+            style="height: 240px"
+            src="./images/Section2/organic-ban-img-4-opt.jpg.webp"
+            alt="zoom Image"
+          />
+          <div class="img-text">
+            <h2 style="color: #d1a921">CITRUS TEA</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!---------------------------------------Section3-------------------------------------------------------->
+    <div
+      class="section3"
+      style="display: flex; flex-direction: column; align-items: center"
+    >
+      <div
+        class="section3-header"
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        <h1>Featured Products</h1>
+        <img
+          style="height: 35px; width: 160px"
+          src="./images/section3/organic-svg-title-img.svg"
+        />
+        <p style="color: gray">
+          There are many variations of passages of lorem ipsum available
+        </p>
+      </div>
+      <div></div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <!-----------------------------------Section4------------------------------------------------------------>
+
+    <div class="section4-container">
+      <div class="section4">
+        <div class="section4-img">
+          <img src="./images/section4/left-img-apricot.png" />
+        </div>
+        <div class="section4-text">
+          <h1>Blend fruits premium drink</h1>
+          <p style="color: grey">
+            Many desktop publishing packages and web page editors now use Lorem
+            Ipsum as their default model text, and a search for lorem ipsum will
+            uncover.
+          </p>
+          <div style="display: flex; justify-content: flex-start">
+            <div>
+              <div>
+                <h6>FRUITS:</h6>
+                <hr style="width: 200px" />
+                <i><p style="color: grey">Feijoa, Piña, Manzana</p></i>
+              </div>
+              <div>
+                <h6>SHELF LIFE:</h6>
+                <hr style="width: 200px" />
+                <i><p style="color: grey">One Month</p></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h6>PACKAGING:</h6>
+                <hr style="width: 200px" />
+                <i><p style="color: grey">Glass Bottle</p></i>
+              </div>
+              <div>
+                <h6>BOTTLE SIZE:</h6>
+                <hr style="width: 200px" />
+                <i><p style="color: grey">300ml</p></i>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              margin-top: 8px;
+              display: flex;
+              gap: 26px;
+              flex-direction: row;
+              justify-content: flex-start;
+            "
+          >
+            <button class="section4-button section4-button1">VIEW MORE</button>
+            <button class="section4-button section4-button2">GO TO SHOP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------->
+
+    <!-----------------------------------Section5------------------------------------------------------------>
+
+    <!-- <div class="container-fluid fruite py-5">
+      <div class="container py-5"> -->
+    <div
+      class="section5"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        background-image: url('./images/section5/fullwidth-row-prod-bg-opt.jpg');
+      "
+    >
+      <div>
+        <div
+          class="section3-header"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <h1>Our Products</h1>
+          <img
+            style="height: 35px; width: 160px"
+            src="./images/section3/organic-svg-title-img.svg"
+          />
+          <p style="color: gray">
+            There are many variations of passages of lorem ipsum available
+          </p>
+          <div
+            class="row g-4"
+            style="flex-direction: column; align-items: center"
+          >
+            <div class="col-lg-8 text-end" style="width: 770px">
+              <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                <div style="display: flex; flex-direction: column">
+                  <li class="nav-item">
+                    <a
+                      class="d-flex m-2 py-2 bg-light rounded-pill active"
+                      data-bs-toggle="pill"
+                      href="#tab-1"
+                      style="
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                      "
+                    >
+                      <img
+                        src="./images/section5/icecream-ico.svg"
+                        style="height: 36px"
+                      />
+
+                      <span
+                        class="text-dark"
+                        style="width: 130px; font-weight: 600"
+                        >ICE CREAM</span
+                      >
+                    </a>
+                  </li>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <li class="nav-item">
+                    <a
+                      class="d-flex py-2 m-2 bg-light rounded-pill"
+                      data-bs-toggle="pill"
+                      href="#tab-2"
+                      style="
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                      "
+                    >
+                      <img
+                        src="./images/section5/fruit-tea-ico.svg"
+                        style="height: 36px"
+                      />
+
+                      <span
+                        class="text-dark"
+                        style="width: 130px; font-weight: 600"
+                        >FRUIT TEA</span
+                      >
+                    </a>
+                  </li>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <li class="nav-item">
+                    <a
+                      class="d-flex m-2 py-2 bg-light rounded-pill"
+                      data-bs-toggle="pill"
+                      href="#tab-3"
+                      style="
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                      "
+                    >
+                      <img
+                        src="./images/section5/fruit-jam-ico.svg"
+                        style="height: 36px"
+                      />
+
+                      <span
+                        class="text-dark"
+                        style="width: 130px; font-weight: 600"
+                        >FRUIT JAM</span
+                      >
+                    </a>
+                  </li>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <li class="nav-item">
+                    <a
+                      class="d-flex m-2 py-2 bg-light rounded-pill"
+                      data-bs-toggle="pill"
+                      href="#tab-4"
+                      style="
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                      "
+                    >
+                      <img
+                        src="./images/section5/juice-ico.svg"
+                        style="height: 36px"
+                      />
+
+                      <span
+                        class="text-dark"
+                        style="width: 130px; font-weight: 600"
+                        >JUICE</span
+                      >
+                    </a>
+                  </li>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <li class="nav-item">
+                    <a
+                      class="d-flex m-2 py-2 bg-light rounded-pill"
+                      data-bs-toggle="pill"
+                      href="#tab-5"
+                      style="
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                      "
+                    >
+                      <img
+                        src="./images/section5/powder-ico.svg"
+                        style="height: 36px"
+                      />
+
+                      <span
+                        class="text-dark"
+                        style="width: 130px; font-weight: 600"
+                        >POWDER</span
+                      >
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1" class="tab-pane fade show p-0 active">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-1-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-3-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- - <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-4-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Raspberries</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-5-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Apricots</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-3-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-2" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-8-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-9-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Raspberries</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-1-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-3-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-6-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-3" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-10-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Oranges</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-11-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Apple</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-6-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Oranges</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-7-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Apple</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-8-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-4" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-12-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-9-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Apricots</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-4-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-5-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Apricots</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-6-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-5" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-3-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Banana</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-11-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Raspberries</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-9-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Oranges</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-8-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Oranges</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3" style="width: 20%">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="rounded position-relative fruite-item">
+                        <div
+                          class="fruite-img"
+                          style="background-color: whitesmoke"
+                        >
+                          <img
+                            src="./images/section5/products/organic-product-12-opt.jpg"
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                          />
+                          <button class="section-5-hover-overlay">
+                            ADD TO CART
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="p-4"
+                        style="
+                          background-color: whitesmoke;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <h6>Grapes</h6>
+                        <p style="color: gray; font-size: 14px">Organic</p>
+                        <div
+                          class="d-flex justify-content-between flex-lg-wrap"
+                          style="flex-direction: column; align-items: center"
+                        >
+                          <p class="fw-bold mb-0" style="color: #83b735">
+                            $269.00
+                          </p>
+                          <!-- <a
+                                href="#"
+                                class="btn border border-secondary rounded-pill px-3 text-primary"
+                                ><i
+                                  class="fa fa-shopping-bag me-2 text-primary"
+                                ></i>
+                                Add to cart</a
+                              > -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div>
+    </div> -->
+    <!-------------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------Section7------------------------------------------------->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div
+          class="section3-header"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <h1>How It Works</h1>
+          <img
+            style="height: 35px; width: 160px"
+            src="./images/section3/organic-svg-title-img.svg"
+          />
+          <p style="color: gray">
+            There are many variations of passages of lorem ipsum available
+          </p>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <div class="row g-5">
+              <div class="col-12 d-flex">
+                <img src="./images/section7/download.svg" />
+                <div class="ps-3">
+                  <h5>Overall Health</h5>
+
+                  <span style="color: grey"
+                    >Lorem ipsum dolor sit amet adipiscing elit aliquet.</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <img src="./images/section7/hitwork-svg-4.svg" />
+                <div class="ps-3">
+                  <h5>Pesticide reduction</h5>
+
+                  <span style="color: grey"
+                    >Lorem ipsum dolor sit amet adipiscing elit aliquet.</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <img src="./images/section7/hitwork-svg-3.svg" />
+                <div class="ps-3">
+                  <h5>Antibiotic resistance</h5>
+
+                  <span style="color: grey"
+                    >Lorem ipsum dolor sit amet adipiscing elit aliquet.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+            <img
+              class="img-fluid animated pulse infinite"
+              src="./images/section7/organic-product.png"
+            />
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+            <div class="row g-5">
+              <div class="col-12 d-flex">
+                <img src="./images/section7/organic-Forma-1.svg" />
+                <div class="ps-3">
+                  <h5>Antioxidant capacity</h5>
+
+                  <span style="color: grey"
+                    >Lorem ipsum dolor sit amet adipiscing elit aliquet.</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <img src="./images/section7/hitwork-svg-2.svg" />
+                <div class="ps-3">
+                  <h5>Environmental safety</h5>
+
+                  <span style="color: grey"
+                    >Lorem ipsum dolor sit amet adipiscing elit aliquet.</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 d-flex">
+                <img src="./images/section7/hitwork-svg-1.svg" />
+                <div class="ps-3">
+                  <h5>Immune system boost</h5>
+
+                  <span style="color: grey"
+                    >Lorem ipsum dolor sit amet adipiscing elit aliquet.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center">
+            <img src="assets/imgs/theme/tea1.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://wa.me/919226597171" target="_blank"
+      ><img src="img/whatsapp1.png" alt="" width="70px" class="whatsapp_float"
+    /></a>
+    <!-- Vendor JS-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/slick.js"></script>
+    <script src="assets/js/plugins/jquery.syotimer.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/counterup.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/images-loaded.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/jquery.vticker-min.js"></script>
+    <script src="assets/js/plugins/jquery.theia.sticky.js"></script>
+    <script src="assets/js/plugins/jquery.elevatezoom.js"></script>
+    <!-- Template  JS -->
+    <script src="assets/js/main.js?v=6.0"></script>
+    <script src="assets/js/shop.js?v=6.0"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/validate.js"></script> -->
+  </body>
+</html>
